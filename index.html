@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Привет</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+        }
+        .greeting {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 3rem 5rem;
+            border-radius: 2rem;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+            text-align: center;
+            backdrop-filter: blur(5px);
+        }
+        h1 {
+            font-size: 5rem;
+            color: #2d3748;
+            letter-spacing: 2px;
+            font-weight: 700;
+        }
+        @media (max-width: 600px) {
+            .greeting { padding: 2rem 2rem; }
+            h1 { font-size: 3rem; }
+        }
+    </style>
+</head>
+<body>
+    <div class="greeting">
+        <h1>Привет!</h1>
+    </div>
+</body>
+</html>
